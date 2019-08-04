@@ -20,3 +20,7 @@ const keys = document.querySelectorAll('.key');
 keys.forEach(key => {
   key.addEventListener('transitionend', removeTransition);
 });
+
+if(window.outerwidth <= 1024){
+ alert('Please use a device with a keyboard'); 
+}
