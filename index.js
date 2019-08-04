@@ -1,3 +1,9 @@
+// only display when on small device (assume mobile)
+if (window.outerWidth <= 1024) {
+   document.getElementById(
+   'change').innerHTML = `<h1 style='font-size: 40px; color: white;'>Please use a device with a keyboard.</h1>`;
+}
+
 // add event listener for when key is pressed down
 window.addEventListener('keydown', function(e) {
   // check if audio exists for key
